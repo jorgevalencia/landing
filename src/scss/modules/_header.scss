@@ -1,0 +1,31 @@
+.Header {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    z-index: 20;
+}
+
+.Header-container {
+    margin: 5px $margin-sm;
+    @include breakpoint($s1024) { margin: 25px $margin-md; }
+}
+
+.Header-logo {
+    align-self: flex-end;
+    display: block;
+    width: 160px;
+    img {width: 100%;}
+}
+
+.Header-lang {
+    margin: 5px auto;
+    text-align: right;
+    .Header-langItem{
+        display: inline-block;
+        padding-left: 10px;
+        font-weight: 700;
+        a {
+            text-decoration: none;
+        }
+    }
+}

@@ -1,0 +1,47 @@
+.KeyBenefits {
+  margin-top: ($margin-md * 1.5);
+  .KeyBenefits-Title,
+  .KeyBenefits-subtitle {
+      margin: 0;
+  }
+}
+
+.KeyBenefits-header {
+    border-bottom: solid thin $c-lightest;
+    padding-bottom: $margin-md;
+    @include breakpoint($s640) {
+      padding-bottom: ($margin-md * 1.5);
+    }
+}
+
+.KeyBenefits-benefit {
+  margin: $margin-md auto;
+  @include breakpoint($s640) {
+    margin: ($margin-md * 2) auto;
+    align-items: center;
+    flex-direction: row-reverse;
+    &.inverted { flex-direction: row; }
+  }
+}
+
+.KeyBenefits-txt {
+  @include breakpoint($s640) {
+    padding-right: $margin-md;
+    .inverted & {padding-right: 0; padding-left: 50px;}
+  }
+}
+
+.KeyBenefits-Photo {
+  @include breakpoint($s640) {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.benefit-title {
+  margin: 1.5rem 0 0;
+  @include breakpoint($s640) {
+    font-size: 1.8rem;
+    margin: 0 0 0.5rem;
+  }
+}

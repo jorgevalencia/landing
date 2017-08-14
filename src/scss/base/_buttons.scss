@@ -1,0 +1,49 @@
+.o-button {
+    background-color: none;
+    border-radius: 4px;
+    border: solid 1px $c-light;
+    color: $c-light;
+    cursor: pointer;
+    display: inline-table;
+    font-size: 1.3rem;
+    margin: 1rem 0;
+    min-width: units(120px);
+    padding: 0.8rem 1rem;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+    @include breakpoint($s1440) { font-size: units(19px); }
+    &:hover{
+        background-color: $c-light;
+        color: $c-white;
+    }
+    &.is-solid {
+        background-color: $c-light;
+        color: $c-white;
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+    .is-light &{
+        border-color: $c-white;
+        color: $c-white;
+        &:hover {
+            border: solid 1px $c-light;
+            background-color: $c-light;
+            color: $c-white;
+        }
+    }
+    &.is-white {
+        color: $c-light;
+        background: $c-white;
+    }
+    &.is-downloaded {
+        border-color: $c-sucsess;
+        color: $c-white;
+        background: $c-sucsess;
+        cursor: default;
+        &:hover {
+            opacity: 1;
+        }
+    }
+}

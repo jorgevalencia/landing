@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<!--[if IE 8]>         <html class="no-js lt-ie9 ie8" lang="en"> <![endif]-->
+<!--[if IE 9]>         <html class="no-js gt-ie9 ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js gt-ie9" lang="en"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="dns-prefetch" href="/ajax.googleapis.com">
+    <link rel="dns-prefetch" href="/google-analytics.com">
+
+    <title>bulthaup Kitchens Essence</title>
+    <meta name="description" content="">
+    <meta name="robots" content="all">
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, user-scalable=1, initial-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
+    <link rel="icon" type="image/ico" href="favicon.ico">
+    <link rel="icon" type="image/png" href="favicon.png">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Modernizer-->
+    <script src="https:/cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-40970181-2', 'auto');
+      ga('send', 'pageview');
+    </script>
+  </head>
+  <body>
+    <!-- VIDEO INTRO -->
+    <section class="Intro js-intro row">
+
+      <!-- HEADER -->
+      <header class="Header js-fadeIn">
+        <div class="Header-container">
+          <ul class="Header-lang">
+              <li class="Header-langItem">
+                  <a class="Header-langLink is-white" onclick="ga('send', 'event', 'ux', 'change-language/to-english');" href="/design/bulthaup-kitchens-essence">en</a>
+              </li>
+              <li class="Header-langItem">
+                  <a class="Header-langLink is-light" onclick="ga('send', 'event', 'ux', 'change-language/to-spanish');" href="/design/esencia-cocinas-bulthaup">es</a>
+              </li>
+          </ul>
+          <h1 class="bulthaup-logo Header-logo">
+              <img src="img/bulthaup-logo.svg" alt="bulthaup Kitchens Essence" />
+          </h1>
+        </div>
+      </header>
+
+      <!-- lightbox Mobile -->
+      <div class="lightbox js-lightbox">
+        <span class="js-close"><img src="img/btn-cancel.svg" alt="close" /></span>
+        <video poster="img/placeholder-intro.jpg" playsinline controls="controls" class="js-video-mobile">
+          <source src="img/bulthaup-video-mobile-EN.webm" type="video/webm">
+          <source src="img/bulthaup-video-mobile-EN.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <!-- Content -->
+      <div class="Intro-content is-light js-fadeIn columns cols-sm-12 cols-md-6">
+        <span class="js-disappear">
+          <h2 class="Intro-title h3-title is-white js-dissapear">Life's most precious moments are spent in a place of perfection</h2>
+        </span>
+        <p class="Intro-subtitle js-dissapear">
+          Discover the essence of a bulthaup kitchen.
+        </p>
+        <a href="#catalog" class="o-button Intro-CTA" onclick="ga('send', 'event', 'ux', 'try-download/button-featured');">download your catalogue</a>
+        <span class="o-button js-videoLink" onclick="ga('send', 'event', 'ux', 'click/watch-video');">watch the bulthaup experience</span>
+      </div>
+
+      <video playsinline muted loop class="Intro-video js-Intro-video">
+        <source src="img/bulthaup-video.webm" type="video/webm">
+        <source src="img/bulthaup-video.mp4" type="video/mp4">
+      </video>
+
+    </section>
+
+    <!-- DOWNLOAD CATALOG -->
+    <section class="Catalog row" id="catalog">
+      <div class="Catalog-Photo cols-sm-12 cols-md-4">
+
+      </div>
+      <div class="Catalog-Form columns cols-sm-12 cols-md-8">
+        <h2 class="CataloG-Title h3-title">Discover the value of a bulthaup kitchen</h2>
+        <!-- Begin Form -->
+        <div class="form-container">
+          <p class="Error-message" id="error-message-container">
+            <span id="error-message"></span>
+          </p>
+          <form id="catalog-download-form">
+            <!-- Email input-->
+            <div class="material-input">
+                <input type="email" value="" name="email" id="email" required>
+                <label class="placeholder" for="email">Email address</label>
+                <span class="bar"></span>
+            </div>
+            <!-- Country selector-->
+            <div class="material-select select-country inline">
+              <select name="country" id="user-country" required>
+                <option value="_none" disabled selected>Select your country</option>
+                <option value="spain">Spain</option>
+                <option value="portugal">Portugal</option>
+                <option value="andorra">Andorra</option>
+                <option value="other">Other</option>
+              </select>
+              <span class="bar"></span>
+            </div>
+            <!-- Region selector-->
+            <div class="material-select select-region inline">
+                <select name="region" id="user-region" required disabled>
+                  <option value="_none" disabled selected>-</option>
+                </select>
+                <span class="bar"></span>
+            </div>
+            <!-- Profession selector-->
+            <div class="material-select select-profesion">
+                <select name="profession" id="user-profession" required>
+                  <option value="_none" disabled selected>Interested as</option>
+                  <option value="professional">Professional</option>
+                  <option value="press">Press</option>
+                  <option value="personal">Personal</option>
+                </select>
+                <span class="bar"></span>
+            </div>
+            <!-- Newsletter suscription-->
+            <div class="material-radio">
+              <h3 class="newsletter-title">bulthaup newsletter</h3>
+              <div class="material-radio-option">
+                  <input type="radio" value="yes" name="subscribe" id="user-subscribe" checked><label>I want to subscribe</label>
+              </div>
+              <div class="material-radio-option">
+                  <input type="radio" value="no" name="subscribe" id="user-subscribe-no"><label>I don't want to subscribe</label>
+              </div>
+            </div>
+
+            <div class="material-checkbox">
+                <input type="checkbox" value="" name="terminosCondiciones" class="required" id="user-terminosycondiciones">
+                <label class="placeholder">I accept the <a href="http://www.blogbulthaup.es/en/condiciones-legales/" target="blank" onclick="ga('send', 'event', 'ux', 'click/legal-conditions');">legal conditions</a></label>
+                <span class="bar"></span>
+            </div>
+
+            <!-- CTA button-->
+            <div class="clear">
+              <input type="submit" value="download your catalogue" name="download" id="submit-button" class="o-button is-solid material-formButtom" onclick="ga('send', 'event', 'ux', 'try-download/form-submit');">
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- KEY BENEFITS -->
+    <section class="KeyBenefits">
+      <div class="l-container">
+        <div class="KeyBenefits-header">
+          <h2 class="KeyBenefits-Title h2-title">Welcome to the world of bulthaup</h2>
+          <h3 class="KeyBenefits-subtitle h3-title is-dark">A bulthaup kitchen is</h3>
+        </div>
+
+        <div class="KeyBenefits-benefit row">
+          <div class="KeyBenefits-Photo columns cols-sm-12 cols-md-5">
+            <img src="img/keyb1.jpg" alt="bulthaup-kitchen" />
+          </div>
+          <div class="KeyBenefits-txt columns cols-sm-12 cols-md-7">
+            <h3 class="benefit-title">The place where you feel at home</h3>
+            <p class="benefit-content">
+              A kitchen is the heart of where we live and communicate. Time spent together around the table is precious. Values such as family and friendship are rediscovered experiencing life's most wonderful moments, enjoying them with all our senses.
+            </p>
+            <a href="#catalog" class="o-button" onclick="ga('send', 'event', 'ux', 'try-download/button-like-home');">download your catalogue</a>
+          </div>
+        </div>
+
+        <div class="KeyBenefits-benefit inverted row">
+          <div class="KeyBenefits-Photo columns cols-sm-12 cols-md-5">
+            <img src="img/keyb2.jpg" alt="bulthaup-kitchen" />
+          </div>
+          <div class="KeyBenefits-txt columns cols-sm-12 cols-md-7">
+            <h3 class="benefit-title">Design quality passion</h3>
+            <p class="benefit-content">
+              Perfection comes from craftmanship. Bulthaup begins where machines can go no further.
+            </p>
+            <p class="benefit-content">
+              Our kitchens and accessories need to work with the same precision as they do on day one in order to optimize workflows and space for creativity, communication, and an individual lifestyle. To experience this quality of life, things need to work.
+            </p>
+            <a href="#catalog" class="o-button" onclick="ga('send', 'event', 'ux', 'try-download/button-design-quality');">download your catalogue</a>
+          </div>
+        </div>
+
+        <div class="KeyBenefits-benefit row">
+          <div class="KeyBenefits-Photo columns cols-sm-12 cols-md-5">
+            <img src="img/keyb3.jpg" alt="bulthaup-kitchen" />
+          </div>
+            <div class="KeyBenefits-txt columns cols-sm-12 cols-md-7">
+            <h3 class="benefit-title">Quality of life</h3>
+            <p class="benefit-content">
+              Functions create quality of life. Only what is truly necessary, indispensable, remains. Bulthaup products function as a life companion. They provide eye-catching features and create a living space from subtle simplicity and pure sensuality.
+            </p>
+            <a href="#catalog" class="o-button" onclick="ga('send', 'event', 'ux', 'try-download/button-quality-life');">download your catalogue</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LOCATION -->
+    <section class="Location">
+        <a href="http://m.bulthaup.com/en/dealer-search-desktop" target="_blank" onclick="ga('send', 'event', 'conversion', 'try-find-store');">Find your nearest bulthaup store</a>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="Footer">
+      <div class="Footer-container">
+        <span class="bulthaup-logo Footer-logo">
+            <img src="img/bulthaup-logo-dark.svg" alt="bulthaup logo" />
+        </span>
+        <ul class="Footer-info">
+          <li><span>Email: </span><a href="mailto:info.es@bulthaup.com" onclick="ga('send', 'event', 'conversion', 'try-email');">info.es@bulthaup.com</a></li>
+          <li><span>Phone: </span><a href="tel:+34932400410" onclick="ga('send', 'event', 'conversion', 'try-call');">+34 932 400 410</a> </li>
+          <li><span>Address: </span>Freixa 48, bajos | 08021 Barcelona, Spain</li>
+        </ul>
+      </div>
+    </footer>
+    <!-- SCRIPTS -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+    <script type="text/javascript" src="js/libs.js"></script>
+  </body>
+</html>

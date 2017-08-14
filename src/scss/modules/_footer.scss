@@ -1,0 +1,50 @@
+.Footer {
+    background: $c-lightest;
+}
+
+.Footer-container {
+    flex-direction: row-reverse;
+    padding: $margin-md 0;
+    @include clearfix;
+    @include breakpoint($s1024) {
+        display: flex;
+        justify-content: space-between;
+        padding: 0.5rem 0;
+    }
+}
+
+.Footer-logo {
+    display: block;
+    margin: auto;
+    width: 160px;
+    img {
+        height: 44px;
+        width: 160px;
+    }
+    @include breakpoint($s1024) {
+        align-items: center;
+        display: flex;
+        margin: 0;
+    }
+}
+
+.Footer-info {
+    padding: 0;
+    @include breakpoint($s1024) {
+        align-items: center;
+        display: flex;
+    }
+    li {
+        display: block;
+        text-align: center;
+        span {
+            font-weight: 700;
+            margin-right: 0,5rem;
+        }
+        @include breakpoint($s1024) {
+            display: inline-block;
+            margin-left: 1rem;
+            text-align: left;
+        }
+    }
+}

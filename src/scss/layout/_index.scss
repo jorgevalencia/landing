@@ -1,0 +1,8 @@
+.l-container {
+    max-width: $global-max-width;
+    margin: auto;
+    padding: 0 $margin-sm;
+    @include breakpoint($s1024) {
+        padding: 0 $margin-md;
+    }
+}

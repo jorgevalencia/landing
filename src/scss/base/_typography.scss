@@ -1,0 +1,81 @@
+@viewport { width: device-width; }
+
+@font-face {
+    font-family: 'atrotissemisans-lightregular';
+    src: url('fonts/atrotissemisans-light-webfont.woff2') format('woff2'),
+         url('fonts/atrotissemisans-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+  background-color: $c-white;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+* {
+  &:before,
+  &:after { box-sizing: inherit; }
+  &::selection {
+      background: $c-dark;
+      color: $c-light;
+  }
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  color: $c-dark;
+  font-family: $font-primary;
+  min-height: 100%;
+  overflow-x: hidden;
+  text-rendering: optimizeLegibility;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+a {
+  background: transparent;
+  color: $c-light;
+  text-decoration: underline;
+  transition: color .2s;
+  & .is-light { color: $c-white; }
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $c-light;
+  font-family: $font-primary;
+  font-weight: normal;
+}
+
+.h2-title {
+  @include breakpoint($s1024) {
+    font-size: 3rem;
+    margin: 2rem 0 1rem;
+  }
+}
+.h3-title {
+  @include breakpoint($s1024) {
+    font-size: 2.4rem;
+    margin: 1rem 0 1rem;
+  }
+}
+
+p {
+  margin: 0.5rem 0;
+}
+
+.is-white{ color: $c-white; }
+.is-light{ color: $c-lighter; }
+.is-dark{ color: $c-dark; }
+.u-center {text-align: center;}
